@@ -87,10 +87,10 @@ Przykładowy harmonogram (schedule.json)
 }
 ```
 
-Wysłanie harmonogramu do urządzenia przez mqtt.
+Wysłanie harmonogramu do urządzenia przez mqtt. Jednorazowo maksymalny rozmiar konfiguracji to 10kB.
 
 ```bash
-cat schedule.json | mosquitto_pub -h 192.168.1.31 -t "x7relays-poc/60b18501-f7a1-582d-89f6-fc1d096d234b/config" -s
+mosquitto_pub -h 192.168.1.31 -t "x7relays-poc/60b18501-f7a1-582d-89f6-fc1d096d234b/config" -f schedule.json
 ```
 
 
