@@ -53,7 +53,7 @@ curl http://192.168.5.10/networking.shtml?dhcp=false
 ### Ustawienie pobierania adresu z DHCP
 
 ```bash 
-curl http://192.168.5.10/relays.shtml?dhcp=true&ip=192.168.10.1&mask=255.255.255.0&gw=192.168.10.1&dns=192.168.10.1
+curl http://192.168.5.10/networking.shtml?dhcp=true&ip=192.168.10.1&mask=255.255.255.0&gw=192.168.10.1&dns=192.168.10.1
 ```
 
 ## Setrowanie przez MQTT
