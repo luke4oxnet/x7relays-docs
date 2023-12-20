@@ -44,6 +44,18 @@ Przykładowa odpowiedź:
 {"relay1":{"state":false},"relay2":{"state":false},"relay3":{"state":true},"relay4":{"state":false}}
 ```
 
+### Ustawienie stałego adresu IP
+
+```bash 
+curl http://192.168.5.10/networking.shtml?dhcp=false
+```
+
+### Ustawienie pobierania adresu z DHCP
+
+```bash 
+curl http://192.168.5.10/relays.shtml?dhcp=true&ip=192.168.10.1&mask=255.255.255.0&gw=192.168.10.1&dns=192.168.10.1
+```
+
 ## Setrowanie przez MQTT
 
 Przykładowy harmonogram (schedule.json)
